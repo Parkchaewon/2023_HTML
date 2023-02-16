@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML5 멀티미디어</h1>
+    <h2>video</h2>
+    <video src="./video/페레로.mp4"
+     style="width: 576px;" height="360px"
+     controls autoplay muted loop
+    ></video>
+    <p>conrols : 플레이버튼과 남은 시간, 소리표시 <br>
+       autoplay : 자동실행 (단, muted상태일때) <br>
+       muted : 무음 <br>
+       loop : 계속반복 <br>
+    </p>
+
+    <h2>플러그인</h2>
+    <h3>object</h3>
+    <object data="./data/3일차 HTML5.pdf"></object>
+    <object data="./img/naver.png" type=""></object>
+    <p>object태그는 다양한 파일들을 화면에 출력하는 태그</p>
+
+    <h1>embed</h1>
+    <embed src="./data/3일차 HTML5.pdf" type="">
+    <embed src="./img/naver.png" type="">
+        <p>embed태그는 object와 동일하게 사용할 수 있다</p>
+
+        <h3>유튜브 영상 들고오기</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/REdbPz2kFD4?mute=1&autoplay=1&controls=0" title="[티비냥] 아내랑 싸우고 안재홍이랑 야구보러 간 이선균ㅋㅋㅋㅋ 거의 내 세컨드~◕ˇεˇ◕✿ | #택시 | 170419 #01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>소스코드를 복사해오면 ifaime안에 설정이 되어서 들고 올 수 있다</p>
+        <p>
+            video의 설정을 유튜브에서도 적용할 수 있다 <br>
+            url뒤에 ?를 이용한 쿼리스트링으로 작성할 수 있다 <br>
+            ?mute=1&autoplay=1 같은 값으로 들어간다 <br>
+            1은 true 참이라는 뜩으로 사용,
+            0은 false 거짓이라는 값으로 사용
+        </p>
+        <h3>멀티미디어 실습</h3>
+        <table>
+            <tr>
+                <td><iframe width="320" height="180" src="https://www.youtube.com/embed/ZVhLeZl7Xi0" title=""경호야 너 왜 여기 있냐?" 일타강사 정경호의 황당한 공채 탤런트 시험 썰ㅋㅋㅋ | #인생술집" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                <td><iframe width="320" height="180" src="https://www.youtube.com/embed/7KKShQxZhug" title="더 글로리 파트2 | 티저 예고편 | 넷플릭스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                <td><iframe width="320" height="180" src="https://www.youtube.com/embed/jDFLYzi_3VY" title="송혜교가 가해자들에게 하는 복수들 | 더 글로리 | 넷플릭스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                <td><iframe width="320" height="180" src="https://www.youtube.com/embed/KVWUPsPQyIo" title="이런 남자 또 없습니다♥이선균의 레전드 프로포즈 #힐링캠프 ep.139" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            </tr>
+            <tr>
+                <td>경호야 너 왜 여기 있냐?</td>
+                <td>더 글로리 파트2 | 티저 예고편 | 넷플릭스</td>
+                <td>송혜교가 가해자들에게 하는 복수들 | 더 글로리 | 넷플릭스</td>
+                <td>이런 남자 또 없습니다♥이선균의 레전드 프로포즈 </td>
+            </tr>
+        </table>
+</body>
+</html>
